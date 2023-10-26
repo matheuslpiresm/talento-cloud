@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;600&family=Lato:ital,wght@0,400;0,900;1,100;1,700&family=Roboto:ital,wght@0,700;1,100;1,300&family=Rubik+Puddles&display=swap");
+
+* {
+  font-family: inter;
+}
+
+body {
+  background-color: azure;
+  margin: 0;
+}
+
+main {
+  width: 850px;
+  margin: 0 auto;
+}
+
+.navbar {
+  background-color: rgb(95, 157, 215);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar li {
+  margin-right: 100px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.navbar ul li:hover {
+  color: #333;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 400;
+  margin-top: 70px;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 200;
+  margin-top: 40px;
+}
+
+p {
+  font-size: 17px;
+  font-weight: 100;
+}
+
+img {
+  width: 100%;
+}
+
+footer {
+  background-color: rgb(95, 157, 215);
+  margin-top: 50px;
+  text-align: center;
+  height: 35px;
+}
