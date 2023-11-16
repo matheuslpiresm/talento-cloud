@@ -81,12 +81,20 @@ let numero = document.getElementById("numero");
 let botao = document.querySelector(".btn");
 let cont = 0;
 
+
+// Funçao em formato padrão para adicionar contador ao botão
 function adicionaUm() {
     cont += 1;
     numero.innerText = cont;
 }
+botao.addEventListener("click", adicionaUm);
 
-botao.addEventListener('click', adicionaUm);
+
+// Funcao com a mesma lógica só que utilizando arrow function e declaração anonima
+botao.addEventListener("click", () => {
+    cont = cont + 1;
+    numero.innerText = cont;
+})
 
 
 
