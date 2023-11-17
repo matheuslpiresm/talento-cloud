@@ -97,6 +97,21 @@ botao.addEventListener("click", () => {
 })
 
 
+// Função que também soma +1 ao clicar, só que muda pra cores aleatórias a cada clique
+const clique = document.querySelector(".clique");
+clique.addEventListener("click", somarDois);
+let capturaNumero = document.getElementById("numero-2");
+
+function somarDois() {
+    let valorAtual = parseInt(capturaNumero.textContent);
+    let novoValor = valorAtual + 1;
+    capturaNumero.textContent = novoValor;
+
+    let r = parseInt(Math.random() * 255);
+    let g = parseInt(Math.random() * 255);
+    let b = parseInt(Math.random() * 255);
+    capturaNumero.style.color = `rgb(${r}, ${g}, ${b})`;
+}
 
 
 

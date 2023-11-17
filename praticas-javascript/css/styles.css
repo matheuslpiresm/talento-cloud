@@ -1,85 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap");
 
 * {
-    font-family: Ubuntu;
+  font-family: Ubuntu;
 }
 
 body {
-    background: linear-gradient(to left, #8223db, #ae8bce);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  background: linear-gradient(to left, #8223db, #ae8bce);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 main {
-    background-color: #ffaa0f;
-    width: 600px;
-    border-radius: 10px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 50px;
+  background-color: #ffaa0f;
+  width: 600px;
+  border-radius: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
 }
 
 h1 {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 h2 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 ul {
-    width: 315px;
-    font-weight: 300;
+  width: 315px;
+  font-weight: 300;
 }
 
 #proz {
-    width: 200px;
-    height: 30px;
-    background-color: #fff;
-    display: block;
-    font-size: 15px;
-    text-align: center;
-    border-radius: 10px;
-    line-height: 30px;
-    color: #000;
-    transition: transform 0.5s ease;
+  width: 200px;
+  height: 30px;
+  background-color: #fff;
+  display: block;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 10px;
+  line-height: 30px;
+  color: #000;
+  transition: transform 0.5s ease;
 }
 
 #proz:hover {
-    background-color: #8444c0;
-    transform: scale(1.10);
-    color: #fff;
-    font-weight: 500;
+  background-color: #8444c0;
+  transform: scale(1.1);
+  color: #fff;
+  font-weight: 500;
 }
 
 a {
-    text-decoration: none;
-    font-weight: 300;
-    color: #000;
+  text-decoration: none;
+  font-weight: 300;
+  color: #000;
 }
 
 li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .post-bg {
-    width: 350px;
-    background-color: #fff;
-    border-radius: 5px;
+  width: 350px;
+  background-color: #fff;
+  border-radius: 5px;
 }
 
 .alinhamento {
-    border: solid 3px red;
+  border: solid 3px red;
+}
+
+.contadores {
+  display: flex;
+}
+
+.container {
+  width: 200px;
+  background-color: #5723db;
+  text-align: center;
+  margin: 10px;
+  border-radius: 5px;
 }
 
 .btn {
-    width: 200px;
-    background-color: #fff;
-    font-size: 15px;
-    text-align: center;
-    border-radius: 10px;
-    line-height: 20px;
-    margin-bottom: 30px;
+  width: 150px;
+  background-color: #fff;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 10px;
+  line-height: 20px;
+  margin-bottom: 30px;
 }
