@@ -114,6 +114,36 @@ function somarDois() {
 }
 
 
+// Exemplos de eventos de mouse
+const button = document.getElementById("btn-mouse");
+const span = document.querySelector("span");
+const section = document.getElementById("section");
+
+
+function mostrarSpan() {
+    span.style.opacity = "100"
+}
+
+function ocultarrSpan() {
+    span.style.opacity = "0"
+}
+
+function fazerUmClick() {
+    section.innerText = "Você fez um click simples";
+}
+
+function fazerUmDoubleClick() {
+    section.innerText = "Você fez um double click simples";
+}
+
+button.addEventListener("mouseover", mostrarSpan);
+button.addEventListener("mouseout", ocultarrSpan);
+button.addEventListener("click", fazerUmClick);
+button.addEventListener("dblclick", fazerUmDoubleClick);
+
+
+
+
 
 
 
