@@ -116,7 +116,7 @@ function somarDois() {
 
 // Exemplos de eventos de mouse
 const button = document.getElementById("btn-mouse");
-const span = document.querySelector("span");
+const span = document.getElementById("passar-mouse");
 const section = document.getElementById("section");
 
 
@@ -133,7 +133,7 @@ function fazerUmClick() {
 }
 
 function fazerUmDoubleClick() {
-    section.innerText = "Você fez um double click simples";
+    section.innerText = "Você fez um double click";
 }
 
 button.addEventListener("mouseover", mostrarSpan);
@@ -141,6 +141,24 @@ button.addEventListener("mouseout", ocultarrSpan);
 button.addEventListener("click", fazerUmClick);
 button.addEventListener("dblclick", fazerUmDoubleClick);
 
+
+// Outros eventos de mouse
+let elementoClicado = document.getElementById("elemento-clicado");
+let botaoTempo = document.getElementById("botao-tempo");
+let tempo1 = document.getElementById("tempo1");
+let tempo2 = document.getElementById("tempo2");
+
+botaoTempo.addEventListener("click", function (evento) {
+
+    tempo1.innerText = evento.timeStamp; // Exibe o tempo em milisegundos entre a renderização da página e o click no elemento 
+    tempo2.innerText = Math.round(evento.timeStamp / 1000); // Converte o tempo acima para segundos e arredonda o valor
+});
+
+
+document.addEventListener("click", function (e) {
+    console.log(e.target)
+    elementoClicado.innerText = e.target.id;
+});
 
 
 

@@ -96,8 +96,12 @@ li a:hover {
   margin-bottom: 30px;
 }
 
-span {
+#passar-mouse {
   opacity: 0;
   transition: all 0.5s;
+}
+
+p{
+  margin: 5px 2px;
 }
 
