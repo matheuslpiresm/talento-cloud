@@ -160,6 +160,30 @@ document.addEventListener("click", function (e) {
     elementoClicado.innerText = e.target.id;
 });
 
+// Eventos de teclado
+let keyText = document.querySelector("#key-text");
+let codeText = document.querySelector("#code-text");
+let quadrado = document.querySelector("#quadrado");
+let distancia = 0;
+
+// Exibindo quais teclas estão sendo digitadas
+document.addEventListener("keyup", (e) => {
+    keyText.innerText = e.key;
+    codeText.innerText = e.code;
+})
+
+// Movimentando elemento para direita e esquerda usando o teclado
+document.addEventListener("keydown", (e) => {
+
+    if (e.code === "ArrowRight") {
+        distancia += 10;
+        quadrado.style.left = distancia + "px";
+    } else if (e.code === "ArrowLeft") {
+        distancia -= 10;
+        quadrado.style.left = distancia + "px";
+    }
+});
+
 
 
 
