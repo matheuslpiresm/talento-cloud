@@ -184,6 +184,52 @@ document.addEventListener("keydown", (e) => {
     }
 });
 
+// Utilizando preventDefault e Alert
+
+let linkProz = document.getElementById("link-proz");
+let btnSubmit = document.querySelector("button[type=submit]")
+
+linkProz.addEventListener("click", (e) => {
+    e.preventDefault();
+    alert("Não foi possível acessar o link");
+});
+
+btnSubmit.addEventListener("click", (e) => {
+    e.preventDefault();
+    alert("Não foi possível enviar os dados do formulário");
+
+})
+
+// Validação de formulários
+let inputEmail = document.getElementById("email");
+let inputIdade = document.getElementById("idade");
+let formulario = document.getElementById("formulario");
+
+// Adiciona cor do fundo do input quando estiver em foco
+inputEmail.addEventListener("focus", () => {
+    inputEmail.style.backgroundColor = "#B0E0E6";
+})
+
+// Remove cor do fundo do input quando estiver em foco
+inputEmail.addEventListener("blur", (e) => {
+    e.target.style.backgroundColor = ""
+});
+
+// Exibe mensagem ao usuário quando o dado do input é alterado
+inputIdade.addEventListener("change", () => {
+    alert("Você quer mesmo alterar os dados?")
+});
+
+// Exibe mensagem ao clicar no botão de enviar do formulário
+formulario.addEventListener("submit", () => {
+    alert("Os dados foram enviados com sucesso");
+})
+
+
+
+
+
+
 
 
 
